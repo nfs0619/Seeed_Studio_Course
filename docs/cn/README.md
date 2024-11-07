@@ -73,8 +73,8 @@
 | --- | --- | --- | --- |
 | **一、边缘 AI 编程基础** | | | |
 | ✅ 00 | 前言 | 了解课程整体结构和学习路径，明确学习目标和预期成果。 |  |
-| ✅ 01 | 边缘 AI 简介与 Jetson 硬件平台 | 了解课程结构与边缘 AI 概念，熟悉 reComputer J1020 v2 硬件平台与 JetPack 操作系统。 | ✅ 视频链接 |
-| ✅ 02 | Python 开发环境配置与基础语法 | 掌握 Python 基本语法与 AI 辅助编程工具，编写简单的 Python 程序。 | ⏳ 视频链接 |
+| ⏳ 01 | 边缘 AI 简介与 Jetson 硬件平台 | 了解课程结构与边缘 AI 概念，熟悉 reComputer J1020 v2 硬件平台与 JetPack 操作系统。 | ⏳ 视频链接 |
+| ⏳ 02 | Python 开发环境配置与基础语法 | 掌握 Python 基本语法与 AI 辅助编程工具，编写简单的 Python 程序。 | ⏳ 视频链接 |
 | ⏳ 03 | Python 控制流程 | 理解条件语句与循环结构，编写包含控制流程的程序，优化代码。 | ⏳ 视频链接 |
 | ⏳ 04 | Python 函数与模块 | 理解函数与模块，掌握函数调用、传参和返回值，编写可重用的模块。 | ⏳ 视频链接 |
 | ⏳ 05 | Python 数据结构 | 掌握列表、字典等数据结构的操作，解决实际问题。 | ⏳ 视频链接 |
@@ -107,12 +107,12 @@
 ---
 
 ## 🙏 贡献
-如果你有任何课程内容改进建议或发现代码错误，请通过创建 [Issues](#) 或 [PullRequests](#) 来帮助我们改进课程。
+如果你有任何课程内容改进建议或发现代码错误，请通过创建 [Issues](https://github.com/Seeed-Studio/Edge_AI_101_with_Nvidia_Jetson_Course/issues) 或 [PullRequests](https://github.com/Seeed-Studio/Edge_AI_101_with_Nvidia_Jetson_Course/pulls) 来帮助我们改进课程。
 
 ---
 
 ## 📜 开源许可
-本课程采用 [MIT 许可证](LICENSE) 开源。这意味着您可以：
+本课程采用 [MIT 许可证](../../LICENSE) 开源。这意味着您可以：
 
 + ✅ 自由使用、修改和分发本课程的内容
 + ✅ 将本课程用于商业和非商业用途
