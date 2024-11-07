@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>Nvidia Jetson Edge AI Quick Start Series</h1>
+<h1>Edge AI 101 with Nvidia Jetson</h1>
 
 <img src="https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png" /><br>
 
@@ -9,15 +9,6 @@
 </div>
 
 ---
-
-
-
-
-
-
-
-
-
 
 ## Course Overview
 This course is designed for beginners in edge computing, aiming to help students master edge AI technology by introducing edge computing hardware platforms, the basics of Python programming, and AI project development. Through practical projects, particularly the development of an intelligent surveillance system, the course encourages students to apply the knowledge they’ve learned to real-world problem-solving, fostering critical thinking and innovation.
@@ -78,8 +69,8 @@ The course includes GitHub text-based content and corresponding video lessons on
 | --- | --- | --- | --- |
 | **1. Basics of Edge AI Programming** | | | |
 | ✅ 00 | Introduction | Understand the course structure and learning path, clarify learning objectives and expected outcomes. | |
-| ✅ 01 | Introduction to Edge AI and Jetson Hardware Platform | Understand the course structure and edge AI concepts; familiarize with the reComputer J1020 v2 hardware platform and JetPack OS. | ✅ Video Link |
-| ✅ 02 | Python Development Environment Setup & Basics | Master basic Python syntax and AI programming tools; write simple Python programs. | ⏳ Video Link |
+| ⏳ 01 | Introduction to Edge AI and Jetson Hardware Platform | Understand the course structure and edge AI concepts; familiarize with the reComputer J1020 v2 hardware platform and JetPack OS. | ⏳ Video Link |
+| ⏳ 02 | Python Development Environment Setup & Basics | Master basic Python syntax and AI programming tools; write simple Python programs. | ⏳ Video Link |
 | ⏳ 03 | Python Control Flow | Understand conditional statements and loops; write programs with control flow and optimize code. | ⏳ Video Link |
 | ⏳ 04 | Python Functions and Modules | Understand functions and modules; master function calls, parameters, and return values; write reusable modules. | ⏳ Video Link |
 | ⏳ 05 | Python Data Structures | Master operations on data structures like lists and dictionaries to solve real-world problems. | ⏳ Video Link |
@@ -111,7 +102,7 @@ The course includes GitHub text-based content and corresponding video lessons on
 ---
 
 ## 🙏 Contributions
-If you have suggestions for course improvement or spot code issues, please help us enhance the course by creating an [Issue](#) or [Pull Request](#).
+If you have suggestions for course improvement or spot code issues, please help us enhance the course by creating an [Issue](https://github.com/Seeed-Studio/Edge_AI_101_with_Nvidia_Jetson_Course/issues) or [Pull Request](https://github.com/Seeed-Studio/Edge_AI_101_with_Nvidia_Jetson_Course/pulls).
 
 ---
 
