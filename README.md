@@ -132,13 +132,5 @@ Our team has developed additional introductory courses to help you expand your l
 + [XXXX](about:blank)
 
 
-## 🎒 Additional Courses
-In addition to the Nvidia Jetson Edge AI Quick Start Series, this repository also includes materials for other courses. Expand your knowledge by exploring these additional resources:
-
-### TinyML with Wio Terminal Course
-Materials for the **TinyML with Wio Terminal Course** are available in this repository. This course covers the basics of TinyML using the Wio Terminal platform. 
-
-For a detailed course description, please visit the [Seeed Studio Wiki](https://wiki.seeedstudio.com/Wio-Terminal-TinyML/).
-
 
 
