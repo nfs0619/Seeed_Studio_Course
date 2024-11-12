@@ -1,5 +1,3 @@
-- [🏠 Home](/README.md)
-
 * **English Section**
   - [Introduction](/docs/en/00-Introduction/README.md)
 
