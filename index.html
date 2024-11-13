@@ -12,26 +12,17 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
 
 
-<!-- 内嵌的自定义 CSS -->
   <style>
-    /* 隐藏每一课前的折叠图标 */
-    .sidebar-nav .app-sub-sidebar > ul > li > a {
-      padding-left: 1.5em; /* 调整子项的缩进 */
+    /* 设置顶层标题（如 English、中文）的字体大小 */
+    .sidebar-nav .app-sub-sidebar > ul > li > p, /* 顶层的标题 */
+    .sidebar-nav .app-sub-sidebar > ul > li > strong { /* 各章标题 */
+      font-size: 1.2em; /* 调整为比默认更大的字体 */
+      font-weight: bold; /* 设置为粗体 */
     }
 
-    /* 显示顶层和章节标题前的折叠图标 */
-    .sidebar-nav .app-sub-sidebar > ul > li > a::before,
-    .sidebar-nav .app-sub-sidebar > ul > li > ul > li > a::before {
-      content: '▸';
-      position: absolute;
-      left: 1em;
-      color: #666;
-      font-size: 0.8em;
-    }
-
-    /* 隐藏实际内容子项的折叠图标 */
-    .sidebar-nav .app-sub-sidebar > ul > li > ul > li > a::before {
-      content: ''; /* 移除子项前的折叠图标 */
+    /* 设置具体节课的字体小一点 */
+    .sidebar-nav .app-sub-sidebar ul ul li a {
+      font-size: 0.9em; /* 设置为更小的字体 */
     }
   </style>
 </head>
