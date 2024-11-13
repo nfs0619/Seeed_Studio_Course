@@ -13,23 +13,25 @@
 
 
   <style>
-    /* 设置顶层标题（如 English、中文）的字体大小 */
-    .sidebar-nav .app-sub-sidebar > ul > li > p, /* 顶层的标题 */
-    .sidebar-nav .app-sub-sidebar > ul > li > strong { /* 各章标题 */
-      font-size: 1.2em; /* 调整为比默认更大的字体 */
+    /* 顶层标题：English 和 中文 */
+    .sidebar-nav .app-sub-sidebar > ul > li > p,
+    .sidebar-nav .app-sub-sidebar > ul > li > strong {
+      font-size: 1.2em; /* 调整为更大的字体 */
       font-weight: bold; /* 设置为粗体 */
+      margin-top: 10px; /* 设置间距使其更明显 */
     }
-
-    /* 设置具体节课的字体小一点 */
+  
+    /* 章节标题，例如“第一章：边缘 AI 编程基础” */
+    .sidebar-nav .app-sub-sidebar > ul > li > ul > li > strong {
+      font-size: 1.1em; /* 稍微比顶层标题小一些 */
+      font-weight: bold;
+    }
+  
+    /* 具体每一课标题，例如“01-边缘 AI 简介与 Jetson 硬件平台” */
     .sidebar-nav .app-sub-sidebar ul ul li a {
-      font-size: 0.9em; /* 设置为更小的字体 */
+      font-size: 0.9em; /* 设置为比默认更小的字体 */
     }
   </style>
-</head>
-
-
-
-
 
 </head>
 
