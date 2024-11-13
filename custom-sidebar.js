@@ -1,6 +1,6 @@
 // custom-sidebar.js
 
-// 定义侧边栏结构
+// 定义自定义侧边栏结构
 const sidebarContent = [
     {
       title: "English",
@@ -29,14 +29,14 @@ const sidebarContent = [
       html += `<div class="sidebar-section">
                  <p class="section-title" onclick="toggleSection(this)">${section.title}</p>`;
       if (section.children) {
-        html += `<ul class="section-content" style="display: none;">`;
+        html += `<ul class="section-content">`;
         section.children.forEach((child) => {
           if (child.link) {
             html += `<li><a href="#${child.link}">${child.title}</a></li>`;
           } else {
             html += `<li class="subsection">
                        <p class="subsection-title" onclick="toggleSection(this)">${child.title}</p>
-                       <ul class="subsection-content" style="display: none;">`;
+                       <ul class="subsection-content">`;
             child.children.forEach((subChild) => {
               html += `<li><a href="#${subChild.link}">${subChild.title}</a></li>`;
             });
@@ -51,7 +51,7 @@ const sidebarContent = [
     return html;
   }
   
-  // 插入侧边栏到页面
+  // 插入自定义侧边栏到页面
   document.addEventListener("DOMContentLoaded", function () {
     const sidebar = document.querySelector(".sidebar-nav");
     if (sidebar) {
@@ -63,6 +63,7 @@ const sidebarContent = [
   function toggleSection(element) {
     const content = element.nextElementSibling;
     if (content) {
+      element.classList.toggle("active");
       content.style.display = content.style.display === "none" ? "block" : "none";
     }
   }
