@@ -11,22 +11,6 @@
   <!-- 引入 Docsify 的主题样式 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
 
-
-  <!-- 自定义 CSS -->
-  <style>
-    .custom-sidebar .section-title, .custom-sidebar .subsection-title {
-      cursor: pointer;
-      font-weight: bold;
-    }
-    .custom-sidebar .section-content, .custom-sidebar .subsection-content {
-      padding-left: 1em;
-      display: none; /* 默认隐藏 */
-    }
-    .custom-sidebar .active .section-content, .custom-sidebar .active .subsection-content {
-      display: block; /* 激活时显示 */
-    }
-  </style>
-  
 </head>
 
 <body>
@@ -38,7 +22,8 @@
     window.$docsify = {
       name: 'Edge AI 101 with Nvidia Jetson',
       repo: 'https://github.com/nfs0619/Seeed_Studio_Course',
-      loadSidebar: false,
+      loadSidebar: true,
+      sidebar: '_sidebar.md',  // 显式指定路径
       auto2top: true,
       routerMode: 'hash', // 使用 hash 模式避免路径嵌套问题
       relativePath: true,
@@ -49,8 +34,8 @@
 
   <!-- 引入 Docsify 核心库 -->
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-  <!-- 引入自定义侧边栏 -->
-  <script src="custom-sidebar.js"></script>
+  <!-- 引入 Docsify 折叠插件 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
 </body>
 
 </html>
