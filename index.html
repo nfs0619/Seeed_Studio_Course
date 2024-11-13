@@ -14,24 +14,31 @@
 
   <!-- 内嵌的自定义 CSS -->
   <style>
-        /* 显示顶层和章节标题前的折叠图标 */
-    .sidebar-nav .app-sub-sidebar > ul > li > a::before,
-    .sidebar-nav .app-sub-sidebar > ul > li > ul > li > a::before {
-      content: '▸' !important;
+    /* 顶层和章节标题前显示折叠图标 */
+    .sidebar-nav .folder > p::before,
+    .sidebar-nav .folder.open > p::before {
+      content: '▸';
       position: absolute;
-      left: 1em;
+      left: -1em;
       color: #666;
       font-size: 0.8em;
+      transform: rotate(0deg);
+      transition: transform 0.2s ease;
     }
-
-    /* 隐藏每一课的折叠图标 */
-    .sidebar-nav .app-sub-sidebar > ul > li > ul > li > ul > li > a::before {
+  
+    /* 展开的文件夹图标旋转 */
+    .sidebar-nav .folder.open > p::before {
+      transform: rotate(90deg);
+    }
+  
+    /* 隐藏具体课目的图标 */
+    .sidebar-nav .file > a::before {
       content: '' !important;
     }
-
-    /* 调整每一课的缩进，使其没有图标 */
-    .sidebar-nav .app-sub-sidebar > ul > li > ul > li > ul > li > a {
-      padding-left: 2.5em !important;
+  
+    /* 调整具体课目的缩进 */
+    .sidebar-nav .file > a {
+      padding-left: 1.5em;
     }
   </style>
 
