@@ -12,39 +12,17 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
 
 
-  <!-- 内嵌的自定义 CSS -->
+  <!-- 自定义 CSS -->
   <style>
-    /* 为顶层和章节标题添加折叠图标 */
-    .sidebar-nav .folder.level-1 > p::before,
-    .sidebar-nav .folder.open.level-1 > p::before,
-    .sidebar-nav .folder.level-2 > p::before,
-    .sidebar-nav .folder.open.level-2 > p::before {
-      content: '▸' !important;
-      position: absolute !important;
-      left: -1em !important;
-      color: #666 !important;
-      font-size: 0.8em !important;
-      transform: rotate(0deg) !important;
-      transition: transform 0.2s ease !important;
+    .custom-sidebar .section-title, .custom-sidebar .subsection-title {
+      cursor: pointer;
+      font-weight: bold;
     }
-  
-    /* 展开的文件夹图标旋转 */
-    .sidebar-nav .folder.open > p::before {
-      transform: rotate(90deg) !important;
-    }
-  
-    /* 隐藏具体课目的图标 */
-    .sidebar-nav .file > a::before {
-      content: '' !important;
-    }
-  
-    /* 调整具体课目的缩进 */
-    .sidebar-nav .file > a {
-      padding-left: 1.5em !important;
+    .custom-sidebar .section-content, .custom-sidebar .subsection-content {
+      padding-left: 1em;
     }
   </style>
   
-
 </head>
 
 <body>
@@ -56,7 +34,7 @@
     window.$docsify = {
       name: 'Edge AI 101 with Nvidia Jetson',
       repo: 'https://github.com/nfs0619/Seeed_Studio_Course',
-      loadSidebar: true,
+      loadSidebar: false,
       sidebar: '_sidebar.md',  // 显式指定路径
       auto2top: true,
       routerMode: 'hash', // 使用 hash 模式避免路径嵌套问题
@@ -68,8 +46,8 @@
 
   <!-- 引入 Docsify 核心库 -->
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-  <!-- 引入 Docsify 折叠插件 -->
-  <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <!-- 引入自定义侧边栏 -->
+  <script src="custom-sidebar.js"></script>
 </body>
 
 </html>
